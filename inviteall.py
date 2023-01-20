@@ -67,7 +67,7 @@ def user_full_name(user):
     return full_name
 
 
-@borg.on(admin_cmd(pattern=r"inviteem ?(.*)"))
+@borg.on(admin_cmd(pattern=r"inviteall ?(.*)"))
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
